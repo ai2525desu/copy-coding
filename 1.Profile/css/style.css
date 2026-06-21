@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+.header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.common {
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+    padding: 0;
+}
+
+.header__screen-transition {
+    text-decoration: none;
+    border: none;
+}
+
+.header__title-logo {
+    display: block;
+    width: 120px;
+    height: 40px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 1rem;
+}
+.nav__screen-transition {
+    text-decoration: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.main-visual__img {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.content-of-about {
+    margin: 4rem auto 0;
+}
+
+.content-of-about__title,
+.content-of-bicycle__title {
+    width: fit-content;
+    height: auto;
+    font-size: 32px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto 4rem;
+}
+
+.content-of-about__person {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.person-introduction__name {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.person-introduction__content {
+    font-size: 16px;
+}
+
+.person__img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.content-of-bicycle {
+    margin: 4rem auto;
+}
+
+.content-of-bicycle__content-wrap {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.content-of-bicycle__content {
+    width: calc(100% / 3);
+    height: auto;
+    text-align: center;
+}
+
+.content-of-bicycle__img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.content-of-bicycle__item-title {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 16px;
+}
+
+@media (max-width: 601px) {
+    .content-of-about__person {
+        flex-direction: column;
+    }
+    .person__img {
+        margin: 0 auto;
+    }
+
+    .content-of-bicycle__content-wrap {
+        flex-direction: column;
+    }
+
+    .content-of-bicycle__content {
+        width: 100%;
+    }
+}
