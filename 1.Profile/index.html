@@ -14,13 +14,13 @@
             href="https://unpkg.com/ress/dist/ress.min.css"
         />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" href="img/favicon.ico" />
     </head>
 
     <body>
         <header class="header common">
             <div class="header__inner">
-                <div class="header__title">
+                <!-- 今回の場合、見出しにる部分はProfileロゴだったのでh1が適切 -->
+                <!-- <div class="header__title">
                     <a class="header__screen-transition" href="index.html">
                         <img
                             class="header__title-logo"
@@ -28,17 +28,29 @@
                             alt="Profile"
                         />
                     </a>
-                </div>
+                </div> -->
+                <h1 class="header__title">
+                    <a class="header__screen-transition" href="index.html">
+                        <img
+                            class="header__title-logo"
+                            src="img/logo.svg"
+                            alt="Profile"
+                        />
+                    </a>
+                </h1>
                 <div class="header__nav">
                     <nav class="nav__wrap">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a class="nav__screen-transition" href="">
+                                <a class="nav__screen-transition" href="#about">
                                     About
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__screen-transition" href="">
+                                <a
+                                    class="nav__screen-transition"
+                                    href="#bicycle"
+                                >
                                     Bicycle
                                 </a>
                             </li>
@@ -48,15 +60,25 @@
             </div>
         </header>
         <main class="main">
-            <h1 class="main-visual">
+            <!-- 反して、メインビジュアルはあくまでもメイン画像の表示なので、divでスタイル範囲指定が良い -->
+            <!-- <h1 class="main-visual">
                 <img
                     class="main-visual__img"
                     src="img/mainvisual.jpg"
                     alt="マウンテンバイク"
                 />
-            </h1>
-            <div class="content-of-about common">
-                <h2 class="content-of-about__title">About</h2>
+            </h1> -->
+            <div class="main-visual">
+                <img
+                    class="main-visual__img"
+                    src="img/mainvisual.jpg"
+                    alt="マウンテンバイク"
+                />
+            </div>
+            <!-- ここのdivタグは、章を意味するsectionタグが適切だった -->
+            <!-- <div class="content-of-about common"> -->
+            <section class="content-of-about common">
+                <h2 id="about" class="content-of-about__title">About</h2>
                 <div class="content-of-about__person">
                     <div class="person__img-wrap">
                         <img
@@ -70,15 +92,18 @@
                             KAKERU&nbsp;MIYAMA
                         </h3>
                         <p class="person-introduction__content">
+                            <!-- 見本通りに改行くぉbrで指定 -->
                             テキストテキストテキストテキストテキストテキストテキスト<br />
                             テキストテキストテキストテキストテキストテキストテキスト<br />
                             テキストテキストテキストテキストテキストテキストテキスト
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="content-of-bicycle common">
-                <h2 class="content-of-bicycle__title">Bicycle</h2>
+            </section>
+            <!-- このdivタグも章を表すように独立した内容を表したいのでsectionが適切 -->
+            <!-- <div class="content-of-bicycle common"> -->
+            <section class="content-of-bicycle common">
+                <h2 id="bicycle" class="content-of-bicycle__title">Bicycle</h2>
                 <div class="content-of-bicycle__content-wrap">
                     <div class="content-of-bicycle__content">
                         <div class="content-of-bicycle__img">
@@ -120,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="footer">
             <small class="content-width footer__copylight"
