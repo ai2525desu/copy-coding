@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+body {
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 5px;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/*header*/
+
+header {
+  padding-top: 50px;
+}
+
+header img {
+  width: 180px;
+  padding-bottom: 10px;
+}
+
+/*mainvisual*/
+
+.mainvisual img {
+  width: 100%;
+}
+
+/*index*/
+
+.index {
+  margin-top: 50px;
+  background: white;
+  padding: 20px 0;
+}
+
+
+.section-title {
+  padding: 10px 0;
+}
+
+.index ol {
+  /* 数字をテキストに含める */
+  list-style-position: inside;
+}
+
+.index ol li {
+  padding-bottom: 20px;
+}
+
+/*detail*/
+
+.detail {
+  margin-block: 50px;
+}
+
+.detail img {
+  width: 270px;
+  height: 270px;
+}
+
+.detail .inner {
+  display: flex;
+  font-size: 14px;
+}
+
+.detail .contents {
+  padding-left: 30px;
+}
+
+.detail .contents h3 {
+  padding-bottom: 20px;
+}
+
+.detail .contents dl {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.detail dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail dt {
+  width: 25%;
+}
+
+.detail dd {
+  width: 75%;
+}
+
+.detail .contents p {
+  padding: 15px 0;
+}
+
+.detail .contents a {
+  color: black;
+}
+
+/*footer*/
+
+footer {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-size: 0.75rem;
+}
+
+/*responsive*/
+
+@media (max-width: 1000px) {
+
+  .detail .inner {
+    flex-direction: column;
+  }
+
+  .detail .contents {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .detail img {
+    width: 100%;
+    height: auto;
+  }
+}
