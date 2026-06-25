@@ -10,25 +10,34 @@ body {
     font-size: 0.875rem;
 }
 
+.container {
+    height: auto;
+    max-width: 1000px;
+    /* margin-inline: 5px;→では中央配置ができないので、margin-inline:auto;で中央揃えして、それからpadding-inlineで余白を付けるとレスポンシブや全体のレイアウトにも問題ない */
+    margin-inline: auto;
+    padding-inline: 5px;
+}
+
+/* header */
+
 .header {
     margin-top: 3rem;
 }
 
-.container {
-    height: auto;
-    max-width: 1000px;
-    margin-inline: 5px;
-}
 h1 img {
     width: 180px;
     height: 30px;
 }
 
+/* mainvisual */
+
 .mainvisual img {
-    max-width: 100%;
+    /* max-width: 100%;->大元のcontainerですでにmax-widthを指定しているのでwidthでも問題なく画像は縮小してくれる */
+    width: 100%;
     height: auto;
 }
 
+/* index */
 .index {
     background-color: #fff;
     padding-block: 30px;
@@ -48,6 +57,7 @@ h1 img {
     margin-bottom: 10px;
 }
 
+/*  */
 li {
     list-style-position: inside;
     padding-bottom: 20px;
