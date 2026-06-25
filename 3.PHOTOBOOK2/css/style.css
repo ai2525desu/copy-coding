@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 0.875rem;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 1000px;
+}
+
+/* header */
+.header img {
+    display: block;
+    width: 180px;
+    height: 18px;
+    margin: 65px 0 15px 10px;
+}
+
+/* main */
+.mainvisual img {
+    width: 100%;
+    height: auto;
+}
+
+.inner {
+    width: 80%;
+    height: auto;
+    margin-inline: auto;
+    margin-block: 60px;
+    text-align: center;
+}
+
+/* index */
+.index,
+.detail {
+    background-color: #f5f5f5;
+    padding-block: 40px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.index__list-wrap {
+    border: 1px solid #333;
+    width: 85%;
+    margin-inline: auto;
+}
+
+.index__title-list {
+    padding: 30px;
+    display: inline-block;
+    margin-inline: auto;
+}
+
+.index__title-list li {
+    list-style-position: outside;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.index__title-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* photo */
+.photo__wrap {
+    display: grid;
+    /* カラム＝列を1fr,1frにすればinnerで大きさが設定してあるのでその中で自動的に二つに区切ってくれる */
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.photo__img-list {
+    list-style: none;
+}
+
+.photo__img-list img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* detail */
+.detail__content-wrap {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    text-align: left;
+}
+
+.detail__description {
+    line-height: 1.7;
+    padding-right: 80px;
+    text-wrap: nowrap;
+}
+
+.detail__description dt {
+    font-weight: bold;
+}
+
+.detail__item {
+    padding-left: 30px;
+    border-left: 1px solid#333;
+}
+
+.detail__item p {
+    margin-bottom: 30px;
+}
+
+.detail__item a {
+    display: inline-block;
+    color: #333;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .photo__wrap {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 75%;
+        height: auto;
+        margin-inline: auto;
+    }
+
+    .detail__content-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail__description {
+        padding-bottom: 30px;
+    }
+
+    .detail__item {
+        padding: 30px 0 0 0;
+        border-top: 1px solid#333;
+        border-left: none;
+    }
+
+    .detail__item p {
+        margin-bottom: 16px;
+    }
+
+    .detail__item a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .inner {
+        width: 95%;
+    }
+    .photo__wrap {
+        width: 100%;
+    }
+
+    .detail__description {
+        text-wrap: wrap;
+    }
+}
