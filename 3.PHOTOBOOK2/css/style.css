@@ -15,7 +15,12 @@ body {
 }
 
 /* header */
-.header img {
+.header__site-title a {
+    text-decoration: none;
+    border: none;
+}
+
+.header__site-title a img {
     display: block;
     width: 180px;
     height: 18px;
@@ -56,7 +61,10 @@ body {
 
 .index__title-list {
     padding: 30px;
-    display: inline-block;
+    /* display: inline-block;の場合、.innerのtext-align:center;がなくなるとインライン要素を含むため中央寄せが反応しなくなるので、レイアウト変更に弱い */
+    /* 解答例ではdisplay: table;にして文字数の加減幅に合わせた表示ができるようにした */
+    /* 元々のブロック要素を維持しつつwidthで中身の大きさにあわせて大きさを変えることで、中央寄せしながらも文字数の可変に対応できる */
+    width: fit-content;
     margin-inline: auto;
 }
 
@@ -119,6 +127,11 @@ body {
     display: inline-block;
     color: #333;
     margin-top: 15px;
+}
+
+/* リンク選択時のhover要素よく忘れるので注意 */
+.detail__item a:hover {
+    opacity: 0.5;
 }
 
 .footer {
