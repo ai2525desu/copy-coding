@@ -79,7 +79,7 @@ body {
 }
 
 /* photo */
-.photo__wrap {
+.photos__wrap {
     display: grid;
     /* カラム＝列を1fr,1frにすればinnerで大きさが設定してあるのでその中で自動的に二つに区切ってくれる */
     grid-template-columns: 1fr 1fr;
@@ -137,7 +137,7 @@ body {
 .footer {
     margin-top: 80px;
     margin-bottom: 20px;
-    width: 80%;
+    /* width: 80%;->大きいを設定していたが、今後のレイアウト変更でfooterもinnerと同じ大きさにするとレイアウトの柔軟性が崩れるのでwidthなしでOK */
     margin-inline: auto;
     text-align: center;
 }
