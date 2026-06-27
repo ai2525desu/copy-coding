@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>Recipe Diary後半</title>
+        <meta
+            name="description"
+            content="テキストテキストテキストテキストテキストテキストテキストテキスト"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <main class="main">
+            <article class="recipe-detail">
+                <div class="recipe-deatil__image-wrap">
+                    <img
+                        src="img/recipe.jpg"
+                        alt="ひよこ豆とアボガドのタコスの写真"
+                    />
+                </div>
+                <div class="recipe-detail__content">
+                    <h1>ひよこ豆とアボガドのタコス</h1>
+                    <p>
+                        たっぷりのひよこ豆とレンズ豆にアボガドとトマトを添えて、少しライムを絞ったらおいしいタコスのできあがりです。
+                    </p>
+                    <section class="recipe-detail__material">
+                        <h2>材料（2人分）</h2>
+                        <!-- 下記の構成はulにするか→内容が材料の内容説明(定義)のため、dl。そのうえで、各材料と個数下に下線が必要なのでdivでクラス分け -->
+                        <dl class="material-list">
+                            <div class="material-item">
+                                <dt>テキストテキスト</dt>
+                                <dd>１個</dd>
+                            </div>
+                            <div class="material-item">
+                                <dt>テキストテキスト</dt>
+                                <dd>１個</dd>
+                            </div>
+                            <div class="material-item">
+                                <dt>テキストテキスト</dt>
+                                <dd>１個</dd>
+                            </div>
+                            <div class="material-item">
+                                <dt>テキストテキスト</dt>
+                                <dd>１個</dd>
+                            </div>
+                            <div class="material-item">
+                                <dt>テキストテキスト</dt>
+                                <dd>１個</dd>
+                            </div>
+                        </dl>
+                    </section>
+                    <section>
+                        <h2>作り方</h2>
+                        <ol>
+                            <li>テキストテキストテキストテキスト</li>
+                            <li>テキストテキストテキストテキスト</li>
+                            <li>テキストテキストテキストテキスト</li>
+                            <li>テキストテキストテキストテキスト</li>
+                            <li>テキストテキストテキストテキスト</li>
+                        </ol>
+                    </section>
+                </div>
+            </article>
+            <div class="recipe-detail__link">
+                <a class="button" href="#"> レシピ一覧を見る </a>
+            </div>
+            <div class="sns-transition__wrap">
+                <ul class="sns-transition__lists">
+                    <li><a href="#" target="_blank">instagram</a></li>
+                    <li><a href="#" target="_blank">twitter</a></li>
+                    <li><a href="#" target="_blank">facebook</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <small>&copy;&nbsp;2021&nbsp;Recipe&nbsp;Diary</small>
+        </footer>
+    </body>
+</html>
