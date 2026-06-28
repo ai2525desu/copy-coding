@@ -19,19 +19,19 @@
     <body>
         <main class="main">
             <article class="recipe-detail">
-                <div class="recipe-deatil__image-wrap">
+                <div class="recipe-detail__image-wrap container">
                     <img
                         src="img/recipe.jpg"
                         alt="ひよこ豆とアボガドのタコスの写真"
                     />
                 </div>
-                <div class="recipe-detail__content">
+                <div class="recipe-detail__content container">
                     <h1>ひよこ豆とアボガドのタコス</h1>
                     <p>
                         たっぷりのひよこ豆とレンズ豆にアボガドとトマトを添えて、少しライムを絞ったらおいしいタコスのできあがりです。
                     </p>
                     <section class="recipe-detail__material">
-                        <h2>材料（2人分）</h2>
+                        <h2 class="section-title">材料（2人分）</h2>
                         <!-- 下記の構成はulにするか→内容が材料の内容説明(定義)のため、dl。そのうえで、各材料と個数下に下線が必要なのでdivでクラス分け -->
                         <dl class="material-list">
                             <div class="material-item">
@@ -56,8 +56,8 @@
                             </div>
                         </dl>
                     </section>
-                    <section>
-                        <h2>作り方</h2>
+                    <section class="recipe-detail__recipe">
+                        <h2 class="section-title">作り方</h2>
                         <ol>
                             <li>テキストテキストテキストテキスト</li>
                             <li>テキストテキストテキストテキスト</li>
@@ -71,6 +71,9 @@
             <div class="recipe-detail__link">
                 <a class="button" href="#"> レシピ一覧を見る </a>
             </div>
+        </main>
+
+        <footer class="footer">
             <div class="sns-transition__wrap">
                 <ul class="sns-transition__lists">
                     <li><a href="#" target="_blank">instagram</a></li>
@@ -78,9 +81,6 @@
                     <li><a href="#" target="_blank">facebook</a></li>
                 </ul>
             </div>
-        </main>
-
-        <footer class="footer">
             <small>&copy;&nbsp;2021&nbsp;Recipe&nbsp;Diary</small>
         </footer>
     </body>
