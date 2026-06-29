@@ -3,7 +3,8 @@
 /* main */
 .recipe-detail {
     display: flex;
-    justify-content: space-between;
+    /* flexだけでも横並びになるので、下記のコードは不要でもよかったのか？ */
+    /* justify-content: space-between; */
 }
 
 .container {
@@ -36,10 +37,13 @@
 }
 
 .material-item {
+    /* ここで、flex-wrapを使用し、材料の内容が置くなったときに折り返して表示するように解答例で行っている */
     display: flex;
     justify-content: space-between;
     padding-block: 6px;
-    border-bottom: 1px solid #dcdcdc;
+    /* 見本サイトでは、solidによる下線ではんく、dottedのドットの下線だったので見落とし */
+    /* border-bottom: 1px solid #dcdcdc; */
+    border-bottom: 1px dotted #dcdcdc;
 }
 
 .recipe-detail__recipe ol {
@@ -48,7 +52,9 @@
 
 .recipe-detail__recipe li {
     padding-block: 6px;
-    border-bottom: 1px solid #dcdcdc;
+    /* 見本サイトでは、solidによる下線ではんく、dottedのドットの下線だったので見落とし */
+    /* border-bottom: 1px solid #dcdcdc; */
+    border-bottom: 1px dotted #dcdcdc;
 }
 
 .recipe-detail__link {
@@ -64,6 +70,7 @@
     margin-block: 100px;
 }
 
+/* footer */
 .sns-transition__wrap {
     margin-bottom: 10px;
 }
@@ -84,7 +91,6 @@
     opacity: 0.5;
 }
 
-/* footer */
 .footer {
     margin-bottom: 10px;
     text-align: center;
@@ -97,7 +103,6 @@
 /* responsive */
 @media (max-width: 800px) {
     .recipe-detail {
-        display: flex;
         flex-direction: column;
     }
 
