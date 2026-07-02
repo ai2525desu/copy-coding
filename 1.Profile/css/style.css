@@ -4,6 +4,12 @@ html {
     font-size: 100%;
 }
 
+img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
 .header {
     height: 64px;
     display: flex;
@@ -13,7 +19,7 @@ html {
 .common {
     max-width: 960px;
     height: auto;
-    margin: 0 auto;
+    margin-inline: auto;
     padding: 0 1rem;
 }
 

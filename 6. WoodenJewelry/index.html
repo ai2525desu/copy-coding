@@ -14,8 +14,9 @@
             href="https://unpkg.com/ress/dist/ress.min.css"
         />
         <!--googleフォントの「Crimson Text」を読み込んでみましょう!-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- この2文はなくてもOK -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
         <link
             href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:opsz,wght@14..32,100..900&display=swap"
             rel="stylesheet"
@@ -38,7 +39,13 @@
                     <ul>
                         <li><a href="#concept">Concept</a></li>
                         <li><a href="#work">Work</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <!-- お問い合わせフォームのhrefにメールアドレスを入力するとメールフォームが自動で立ち上がる -->
+                        <!-- <li><a href="#">Contact</a></li> -->
+                        <li>
+                            <a href="mailto:xxx@xxx.com?subject=お問い合わせ"
+                                >Contact</a
+                            >
+                        </li>
                     </ul>
                 </nav>
             </div>

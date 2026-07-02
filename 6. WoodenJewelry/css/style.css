@@ -4,7 +4,7 @@ body {
     color: #2d2d2d;
     /*「Crimson Text」のCSSのコードをここにはりましょう！*/
     font-family: "Crimson Text", serif;
-    font-style: normal;
+    /* font-style: normal; */
 }
 
 .mainvisual {
